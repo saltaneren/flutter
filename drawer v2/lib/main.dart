@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:mysql1/mysql1.dart';
-
+import 'package:petgoapp/screens/home.dart';
 import 'screens/counter.dart';
 import 'screens/nalan.dart';
 import 'screens/toplama.dart';
@@ -26,7 +26,7 @@ class MyApp extends StatelessWidget {
       title: 'TodoList',
       theme: ThemeData(primarySwatch: Colors.blue),
       routes: {
-        "/": (context) => const Todolist(),
+        "/": (context) => const Home(),
         "/todolistdb": (context) => const TodoListMysql(),
         "/todolist": (context) => const Todolist(),
         "/ortalamatik": (context) => const Ortalamatik(),
